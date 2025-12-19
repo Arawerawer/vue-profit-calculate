@@ -12,6 +12,11 @@ const routes: RouteRecordRaw[] = [
     name: "Profit",
     component: () => import("@/view/ProfitViewer.vue"),
   },
+  {
+    path: "/ai",
+    name: "AI",
+    component: () => import("@/view/AiViewer.vue"),
+  },
 ];
 
 const router = createRouter({
