@@ -13,8 +13,7 @@ const outputPrice = ref<number>(0);
 
 const handleCalculate = () => {
   if (inputPrice.value !== null) {
-    const result =
-      inputPrice.value * (1 + profitStore.profitPercentage / 100);
+    const result = inputPrice.value * (1 + profitStore.profitPercentage / 100);
     outputPrice.value = result;
   }
 };
@@ -32,7 +31,7 @@ const handleBack = () => {
 <template>
   <form
     @submit="handleSubmit"
-    class="w-full max-w-5xl px-6 py-4 bg-blue-500 dark:bg-gray-500/20 rounded-lg flex flex-col gap-6"
+    class="w-full max-w-5xl px-6 py-4 bg-gray-400 dark:bg-gray-500/20 rounded-lg flex flex-col gap-6"
   >
     <h2 class="text-center text-[#00FF00] text-5xl">
       {{ profitStore.profitPercentage }}%
