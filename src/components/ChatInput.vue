@@ -44,7 +44,7 @@ const handleKeydown = (e: KeyboardEvent) => {
     <button
       type="submit"
       :disabled="chatStore.isPending || !inputText.trim()"
-      class="px-6 py-1.5 bg-yellow-500 text-white rounded-2xl hover:bg-yellow-600 disabled:opacity-50 disabled:cursor-not-allowed"
+      class="px-6 py-1.5 bg-yellow-500 text-white rounded-2xl hover:bg-yellow-600 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
     >
       發送
     </button>

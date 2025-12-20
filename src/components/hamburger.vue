@@ -18,7 +18,7 @@ const toggleSideBar = () => {
         v-if="!toggle"
         icon="uil:align-left-justify"
         style="color: #aead5f"
-        class="w-10 h-10"
+        class="w-10 h-10 cursor-pointer hover:opacity-80 transition-opacity"
       />
     </button>
 
