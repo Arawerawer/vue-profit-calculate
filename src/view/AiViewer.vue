@@ -3,7 +3,6 @@ import ThemeToggle from "@/components/ThemeToggle.vue";
 import MessageDisplay from "@/components/MessageDisplay.vue";
 import ChatInput from "@/components/ChatInput.vue";
 import Hamburger from "@/components/hamburger.vue";
-import { Icon } from "@iconify/vue";
 </script>
 
 <template>
@@ -12,11 +11,6 @@ import { Icon } from "@iconify/vue";
       class="h-16 bg-white dark:bg-gray-700 rounded-2xl flex justify-between lg:justify-end items-center px-4 gap-4"
     >
       <Hamburger class="lg:hidden" />
-
-      <Icon
-        icon="streamline-emojis:robot-face-3"
-        class="w-10 h-10 mb-2 lg:hidden"
-      />
 
       <ThemeToggle />
     </header>

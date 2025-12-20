@@ -6,7 +6,6 @@ import ThemeToggle from "@/components/ThemeToggle.vue";
 import BorderColorCircle from "@/components/BorderColorCircle.vue";
 import NavigateButton from "@/components/ui/NavigateButton.vue";
 import Hamburger from "@/components/hamburger.vue";
-import { Icon } from "@iconify/vue";
 </script>
 
 <template>
@@ -17,11 +16,6 @@ import { Icon } from "@iconify/vue";
       <Hamburger class="lg:hidden" />
       <!-- 自訂利潤表單 -->
       <CustomProfitForm class="hidden lg:flex" />
-      <Icon
-        icon="mdi:controller"
-        style="color: #cb29ea"
-        class="w-10 h-10 mb-1 lg:hidden"
-      />
 
       <!-- 亮暗模式切換 -->
       <ThemeToggle />
