@@ -31,16 +31,16 @@ const handleBack = () => {
 <template>
   <form
     @submit="handleSubmit"
-    class="w-full max-w-5xl px-6 py-4 bg-gray-400 dark:bg-gray-500/20 rounded-lg flex flex-col gap-6"
+    class="w-full max-w-5xl px-6 py-4 bg-gray-100 dark:bg-gray-500/20 rounded-lg flex flex-col gap-6 shadow-lg border border-gray-200 dark:border-transparent"
   >
-    <h2 class="text-center text-[#00FF00] text-5xl">
+    <h2 class="text-center text-green-500 dark:text-[#00FF00] text-5xl">
       {{ profitStore.profitPercentage }}%
     </h2>
 
     <div>
       <label
         for="InputPrice"
-        class="block mb-2 text-2xl font-medium text-white text-center"
+        class="block mb-2 text-2xl font-medium text-gray-700 dark:text-white text-center"
       >
         輸入價格
       </label>
@@ -49,20 +49,20 @@ const handleBack = () => {
         type="number"
         id="InputPrice"
         v-model.number="inputPrice"
-        class="w-full p-2 text-2xl text-center rounded-lg bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
+        class="w-full p-2 text-2xl text-center rounded-lg bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
         required
       />
     </div>
 
     <label
       for="OutputPrice"
-      class="block text-2xl font-medium text-white text-center"
+      class="block text-2xl font-medium text-gray-700 dark:text-white text-center"
     >
       輸出價格
     </label>
 
     <h1
-      class="w-full p-2 text-3xl text-center rounded-xl bg-gray-700 border-gray-600 text-white placeholder-gray-400 ring-5 ring-blue-500"
+      class="w-full p-2 text-3xl text-center rounded-xl bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-white placeholder-gray-400 ring-5 ring-blue-500"
     >
       {{ Math.round(outputPrice) }}
     </h1>

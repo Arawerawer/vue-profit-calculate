@@ -12,22 +12,22 @@ const formattedResponse = computed(() => {
 
 <template>
   <div
-    class="dark:bg-gray-100 bg-gray-100 border-yellow-300 border-3 w-full h-full p-4 rounded-xl"
+    class="bg-gray-50 dark:bg-gray-800 w-full h-full p-4 rounded-2xl"
   >
     <div
       v-if="chatStore.response"
-      class="text-black prose prose-sm message-content"
+      class="text-black dark:text-white prose prose-sm message-content"
       v-html="formattedResponse"
     ></div>
     <div
       v-else-if="chatStore.isPending"
-      class="text-black flex w-full h-full justify-center items-center"
+      class="text-gray-500 dark:text-gray-400 flex w-full h-full justify-center items-center"
     >
       AI 思考中...
     </div>
     <div
       v-else
-      class="text-black flex w-full h-full justify-center items-center"
+      class="text-gray-500 dark:text-gray-400 flex w-full h-full justify-center items-center"
     >
       請輸入問題...
     </div>

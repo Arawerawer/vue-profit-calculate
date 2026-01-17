@@ -39,12 +39,12 @@ const handleKeydown = (e: KeyboardEvent) => {
       :disabled="chatStore.isPending"
       @keydown="handleKeydown"
       rows="1"
-      class="flex-1 py-1.5 pl-2 pr-4 rounded-2xl bg-white border-2 border-yellow-500 focus:outline-none min-h-[38px] overflow-hidden"
+      class="flex-1 py-2.5 px-4 rounded-2xl bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-400 border border-gray-300 dark:border-gray-600 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 min-h-11 overflow-hidden transition-all"
     />
     <button
       type="submit"
       :disabled="chatStore.isPending || !inputText.trim()"
-      class="px-6 py-1.5 bg-yellow-500 text-white rounded-2xl hover:bg-yellow-600 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+      class="px-6 py-2.5 bg-yellow-500 text-white font-medium rounded-2xl hover:bg-yellow-400 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer transition-all"
     >
       發送
     </button>
